@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: confighub
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        health.enabled: false
+        native:
+          searchLocations: classpath:/configs
+  security:
+    user:
+      name: 'admin'
+      password: 's3cr3tR'
+server:
+  port: 8888

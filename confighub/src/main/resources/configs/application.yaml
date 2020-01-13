@@ -1,0 +1,13 @@
+#spring.jpa.hibernate.ddl-auto: validate
+info.app.name: ${spring.application.name}
+spring:
+  cloud:
+    config:
+      server.health.enabled: false
+      #otherwise we can't override the port via command line args
+      overrideSystemProperties: false
+    inetutils:
+      ignoredInterfaces:
+        - tun.*
+        -
+my.property: application

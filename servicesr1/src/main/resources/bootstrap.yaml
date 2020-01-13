@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: service
+  cloud:
+    config:
+      enabled: true
+      failFast: true
+      retry:
+        max-attempts: 60
+      discovery:
+        enabled: false
+      uri: http://admin:s3cr3tR@localhost:8888
+
+server:
+  port: 9999
+
+
